@@ -1,11 +1,25 @@
 @charset "UTF-8";
  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+</style>
+
+
+
 #* {
     margin:0px;
     padding:0px;
 }
 
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Pinyon Script", cursive;
+    --fonte3:Playfair Display, serif;
+}
+
 html,body{
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: rgb(139, 137, 137);
 }
@@ -16,8 +30,10 @@ header{
     text-align: center;
 }
 header > h1{
-   padding-top: 50px;
-   font-variant: small-caps;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 10vh;
 }
 
 header > p{
@@ -26,6 +42,8 @@ header > p{
 }
 
 section{
+    font-family:  var(--fonte2);
+    font-size: 3.5vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -43,7 +61,7 @@ section.imagem{
 }
 
 section.imagem >p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.458);
 }
 a{
@@ -56,6 +74,8 @@ a:hoover{
 }
 
 footer{
+    font-family: var(--fonte1);
+    font-size: 2vh;
     background-color: black;
     color: white;
     text-align: center;
