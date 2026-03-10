@@ -38,13 +38,16 @@ header > h1{
 
 header > p{
     padding-bottom: 50px;
+}
 
+header a:hoover, footer a:hoover{
+    text-decoration: underline;
 }
 
 section{
     font-family:  var(--fonte2);
     font-size: 3.5vh;
-    padding-top: 10vh;
+    padding-top: 40vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
@@ -58,11 +61,25 @@ section.branco{
 section.imagem{
     background-color: rgb(51,51,51;);
     color: white;
+    box-shadow:inset 3px 3px 10px 0px black;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 section.imagem >p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.458);
+    text-shadow: 1px 1px 1px 1px black
+}
+
+section#img01{
+    background-image: url("../imagens/agradecer\ depois.jpg");
+    background-position: left center;
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
 }
 a{
     color: white;
